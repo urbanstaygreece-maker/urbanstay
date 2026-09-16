@@ -3,7 +3,7 @@ const copy = {
     navStay: 'The stay', navGallery: 'Gallery', navLocation: 'Location', navContact: 'Contact',
     eyebrow: 'Boutique city stay · Thessaloniki', heroTitle: 'Stay in the heart of the city.',
     heroCopy: 'UrbanStay brings bold design, calm comfort and a truly central address together at 68 Agias Sofias.',
-    viewPhotos: 'View the space', contactUs: 'Contact us', addressLabel: 'Address',
+    viewPhotos: 'View the space', contactUs: 'Contact us', bookBooking: 'Book on Booking.com', addressLabel: 'Address',
     theStay: 'The stay', introTitle: 'A playful urban retreat with a strong point of view.',
     introP1: 'A monochrome mural gives UrbanStay its unmistakable identity, while warm lighting, clean finishes and carefully chosen details keep the atmosphere relaxed and welcoming.',
     introP2: 'The apartment includes a comfortable sleeping area, dining/work space, TV, refrigerator, open wardrobe and a modern private bathroom with walk-in shower.',
@@ -14,13 +14,13 @@ const copy = {
     locationKicker: 'Right in Thessaloniki', locationTitle: 'A central base for the city.',
     locationCopy: 'UrbanStay is at 68 Agias Sofias, placing guests in the city center with Thessaloniki’s streets, food, culture and nightlife around them.',
     openMaps: 'Open in Google Maps ↗', contactKicker: 'Plan your stay', contactTitle: 'Questions before you book?',
-    contactCopy: 'Get in touch directly with UrbanStay.', phone: 'Phone'
+    contactCopy: 'Get in touch directly with UrbanStay.', bookingLabel: 'Booking', bookingCta: 'Book on Booking.com', phone: 'Phone'
   },
   el: {
     navStay: 'Το κατάλυμα', navGallery: 'Φωτογραφίες', navLocation: 'Τοποθεσία', navContact: 'Επικοινωνία',
     eyebrow: 'Boutique διαμονή · Θεσσαλονίκη', heroTitle: 'Μείνε στην καρδιά της πόλης.',
     heroCopy: 'Το UrbanStay συνδυάζει ιδιαίτερο design, άνεση και μια πραγματικά κεντρική διεύθυνση, στην Αγίας Σοφίας 68.',
-    viewPhotos: 'Δες τον χώρο', contactUs: 'Επικοινωνία', addressLabel: 'Διεύθυνση',
+    viewPhotos: 'Δες τον χώρο', contactUs: 'Επικοινωνία', bookBooking: 'Κράτηση στο Booking.com', addressLabel: 'Διεύθυνση',
     theStay: 'Το κατάλυμα', introTitle: 'Ένα urban καταφύγιο με ξεχωριστή ταυτότητα.',
     introP1: 'Η ασπρόμαυρη τοιχογραφία δίνει στο UrbanStay τον ιδιαίτερο χαρακτήρα του, ενώ ο ζεστός φωτισμός, οι καθαρές γραμμές και οι προσεγμένες λεπτομέρειες δημιουργούν μια άνετη και φιλόξενη ατμόσφαιρα.',
     introP2: 'Το διαμέρισμα διαθέτει άνετο χώρο ύπνου, τραπεζαρία/χώρο εργασίας, τηλεόραση, ψυγείο, ανοιχτή κρεμάστρα και μοντέρνο ιδιωτικό μπάνιο με walk-in ντους.',
@@ -31,7 +31,7 @@ const copy = {
     locationKicker: 'Στο κέντρο της Θεσσαλονίκης', locationTitle: 'Ιδανική βάση για την πόλη.',
     locationCopy: 'Το UrbanStay βρίσκεται στην Αγίας Σοφίας 68, σε κεντρικό σημείο της Θεσσαλονίκης, με την πόλη, το φαγητό, τον πολιτισμό και τη νυχτερινή ζωή γύρω σου.',
     openMaps: 'Άνοιγμα στους Χάρτες Google ↗', contactKicker: 'Οργάνωσε τη διαμονή σου', contactTitle: 'Έχεις απορίες πριν την κράτηση;',
-    contactCopy: 'Επικοινώνησε απευθείας με το UrbanStay.', phone: 'Τηλέφωνο'
+    contactCopy: 'Επικοινώνησε απευθείας με το UrbanStay.', bookingLabel: 'Κράτηση', bookingCta: 'Κράτηση μέσω Booking.com', phone: 'Τηλέφωνο'
   }
 };
 
