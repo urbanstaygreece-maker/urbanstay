@@ -1,0 +1,45 @@
+name: Restore UrbanStay images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/extract-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract uploaded site archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/urbanstay-extract
+          mkdir -p /tmp/urbanstay-extract
+          unzip -q "urbanstay-site(3).zip" -d /tmp/urbanstay-extract
+          ROOT=$(dirname "$(find /tmp/urbanstay-extract -type f -name index.html | head -n 1)")
+          test -n "$ROOT"
+          cp -f "$ROOT/index.html" ./index.html
+          cp -f "$ROOT/styles.css" ./styles.css
+          cp -f "$ROOT/script.js" ./script.js
+          mkdir -p assets/images
+          cp -f "$ROOT"/assets/images/* assets/images/
+
+      - name: Commit restored site files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html styles.css script.js assets/images
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Restore UrbanStay photos"
+          git push
